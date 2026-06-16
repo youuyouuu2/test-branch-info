@@ -87,6 +87,11 @@ export default function App() {
               </button>
             );
           })}
+          <div style={{ flex: 1 }} />
+          <button onClick={function() { setShowContract(true); }}
+            style={{ fontSize: 13, padding: "8px 16px", border: "none", borderRadius: 8, background: "#111", color: "#fff", cursor: "pointer", fontWeight: 600, marginRight: 12 }}>
+            + 신규 계약 · 매장 생성
+          </button>
         </div>
         <div style={{ flex:1, overflow:"hidden", display:"flex" }}>
           {page === "owners" && <OwnerMasterPage key={targetOwnerId ?? undefined} initOwnerId={targetOwnerId} />}
